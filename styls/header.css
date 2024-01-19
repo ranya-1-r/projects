@@ -1,0 +1,170 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(214, 212, 212);
+    z-index: 100;
+}
+.left-section{
+    align-items: center;
+    display: flex;
+}
+.middle-section{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items:center;
+}
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.menu-logo{
+    height: 28px;
+    margin-left: 18px;
+    margin-right: 18px;
+    cursor: pointer;
+}
+.ytb-logo{
+    height: 25px;
+    cursor: pointer;
+}
+.serch-butt{
+    height: 40px;
+    width: 50px;
+
+}
+.mic-butt{
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+}
+.search-barr{
+    flex: 1;
+    height: 36px;
+    padding-left: 12px;
+    font-size: 16px;
+    border:1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+    width: 0;
+}
+.search-barr::placeholder{
+    font-family:Roboto,arial;
+    font-size: 16px;
+}
+.serch-butt{
+    height: 39px;
+    width: 50px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color:rgb(192, 192, 192); 
+    margin-left: -2px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.serch-butt,
+.mic-butt,
+.upload-icon-container,
+.ytb-app-icon-container,
+.noti_continer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serch-butt .tooltip, 
+    .mic-butt .tooltip,
+    .upload-icon-container .tooltip,
+    .ytb-app-icon-container .tooltip,
+    .noti_continer .tooltip{
+    font-family:Roboto,arial ;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.serch-butt:hover .tooltip, 
+ .mic-butt:hover .tooltip,
+ .upload-icon-container:hover .tooltip,
+ .ytb-app-icon-container:hover .tooltip,
+ .noti_continer:hover .tooltip{
+    opacity: 1;
+}
+
+.mic-butt{
+    height: 39px;
+    width: 42px;
+    border-radius:28px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+.vois-search-icon{
+    height: 24px;
+
+}
+.upload-icon{
+    height: 23px;
+    cursor: pointer;
+}
+.ytb-app-icon{
+    height: 15px;
+    cursor: pointer;
+}
+.noti-icon{
+    height: 23px;
+    cursor: pointer;
+}
+.ma-profil-icon{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+.noti_continer{
+    position: relative;
+
+
+}
+.noti_continers{
+    position: absolute;
+    top: -2px;
+    right: 0;
+    background-color: rgb(236, 0, 0);
+    color: white;
+    font-family: Roboto,Arial;
+    font-size: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
